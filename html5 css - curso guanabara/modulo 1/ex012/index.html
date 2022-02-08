@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+    
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor.</p>
+    <!--Esta é uma forma de adicionar videos,abaixo, lembrando que temos que colocar todos os formatos para gerar uma maior compatibilidade (no caso de hospedar video diretamente no meu site), neste caso se colocar 2 videos, aparecera 2 videos no site-->
+    <video src="midia/meuvideo.mp4" height="500" controls></video>
+    <video src="midia/meuvideo.webm" height="500" controls></video>
+
+    <!--nesta modalidade mesmo que coloque muitos videos, no site só aparecerá um video. Esta opção serve para maior compatibilidade-->
+    <video height="500" controls autoplay loop>
+        <source src="midia/myvideo.mp4" type="video/mp4">
+        <source src="midia/myvideo.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo video do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RsYA8Gr5NTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserido video do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/642557242?h=dbc9e79a95" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/642557242">An&aacute;lise 1&ordm; Tempo Argentina x Chile</a> from <a href="https://vimeo.com/user156657403">Guilherme Funchal</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+
+    <iframe src="https://player.vimeo.com/video/515894085?h=d8587cff23" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/515894085">DBZ: Super Saiyan Goku - Cel Shading Study</a> from <a href="https://vimeo.com/orionterry">Orion Terry</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>
